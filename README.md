@@ -18,3 +18,15 @@ $text = 'test1234';
 $encryptText = $crypt->encrypt($text);
 $decryptText = $crypt->decrypt($encryptText);
 ```
+
+## 命令行
+1. php执行
+
+        php bin/encrypt text [key]
+        php bin/decrypt encryptText [key]
+       
+2. 系统命令(composer 引入，项目根目录下)
+
+         vendor/bin/encrypt text [key]
+         vendor/bin/decrypt encryptText [key]
+    
