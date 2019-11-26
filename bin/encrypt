@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Created by PhpStorm.
+ * User: aiChenK
+ * Date: 2019-11-19
+ * Time: 18:22
+ */
+
+require_once dirname(__DIR__) . '/src/Bootstrap.php';
+\OpenCrypt\Bootstrap::init();
+
+use OpenCrypt\Crypt;
+
+$crypt = new Crypt();
+if (!isset($argv[1])) {
+    die('无效输入');
+}
+$text = $argv[1];
+$encryptText = $crypt->encrypt($text, $argv[2] ?? null);
+echo '原文：', $text, PHP_EOL;
+echo '加密：', $encryptText, PHP_EOL;

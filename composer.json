@@ -1,0 +1,20 @@
+{
+    "name": "aichenk/open-crypt",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "aiChenK",
+            "email": "aichenk@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "ext-openssl": "*",
+        "ext-mbstring": "*"
+    },
+    "bin": [
+        "bin/encrypt",
+        "bin/decrypt"
+    ]
+}
