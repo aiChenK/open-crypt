@@ -13,6 +13,11 @@
         "ext-openssl": "*",
         "ext-mbstring": "*"
     },
+    "autoload": {
+        "psr-4": {
+            "OpenCrypt\\" : "src/"
+        }
+    },
     "bin": [
         "bin/encrypt",
         "bin/decrypt"
